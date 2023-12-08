@@ -1,0 +1,434 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+        <style>
+            body {
+                padding-top: 50px;
+            }
+
+            .btn{
+              display: inline-block;
+              text-align: center;
+              text-decoration: none;
+              cursor: pointer;
+              border: 2px solid #198754; /* Cor do contorno */
+              color: #ffffff; /* Cor do texto */
+              background-color: #198754; /* Fundo transparente */
+              border-radius: 7px; /* Borda arredondada, se desejar */
+              transition: background-color 0.6s, color 0.6s;
+            }
+
+            .btn:hover{
+              background-color: #157347; /* Cor de fundo ao passar o mouse */
+              color: #fff; /* Cor do texto ao passar o mouse */ 
+              border-color: #146c43;
+            }
+            
+            html{
+                scroll-behavior: smooth;
+            }
+
+          
+
+            
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Thiago Janaurio</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form action="painel/processa_login.php" method="POST" class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control" name="senha">
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        
+          <figure>
+            <img class="direita" src="../site/painel/images/mohammad-rahmani-LrxSl4ZxoRs-unsplash.jpg" alt="">
+          </figure>
+  
+        <h1>Bem vindo!!</h1>
+        <p>Bem-vindo à programação, a arte de criar inovações digitais por meio de código. Desenvolvedores transformam ideias em software, cada linha de código representa um passo rumo à inovação. Explore este universo dinâmico onde criatividade e precisão técnica se encontram. <br>Programadores se especializam em linguagens, projetos ou domínios de aplicação. Aqui estão alguns tipos comuns.</p>
+        <br>
+        <a href="#why-us">
+        <p class="botao"><button class="outline-button">Clique Aqui ➜</button></p>
+        </a> 
+        
+      </div>
+    </div>
+
+    <section id="why-us" class="why-us">
+    <div class="container">
+      <!-- Example row of columns -->
+      
+        <div class="container">
+  
+          <div class="row">
+  
+            <div class="col-lg-4">
+              <div class="box">
+                <span>01</span>
+                <h4>Desenvolvedores de Software:</h4>
+                <p class="card">Termo amplo para programadores que criam software. Atuam em diversas fases do desenvolvimento de software.</p>
+              </div>
+            </div>
+            
+  
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box">
+                <span>02</span>
+                <h4>Desenvolvedores Front-end:</h4>
+                <p class="card">Responsáveis pela criação da interface do usuário (UI) em sites ou aplicativos, usando HTML, CSS e JavaScript.</p>
+              </div>
+            </div>
+
+  
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box">
+                <span>03</span>
+                <h4> Desenvolvedores de Back-end:</h4>
+                <p class="card">Focam em lógica do servidor, banco de dados e funcionalidades não visíveis, assegurando o funcionamento de aplicações.</p>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box1">
+                <span>04</span>
+                <h4> Desenvolvedores de Full-Stack:</h4>
+                <p class="card">Possuem conhecimentos tanto em front-end quanto em back-end, permitindo que trabalhem em todas as camadas de uma aplicação.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box1">
+                <span>05</span>
+                <h4> Engenheiros de Software:</h4>
+                <p class="card">Muitas vezes, esse termo é usado de forma intercambiável com "desenvolvedor de software". Engenheiros de software podem ter uma visão ampla, incluindo sistemas.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box1">
+                <span>06</span>
+                <h4> Desenvolvedores de Jogos:</h4>
+                <p class="card">Especializados na criação de jogos digitais, trabalhando em gráficos, física do jogo, inteligência artificial e design.</p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section><!-- End Why Us Section -->
+      <br>
+      <br>
+      <br>
+
+      <hr>
+
+      
+    </div> 
+    <footer id="footer">
+      <div class="container d-md-flex py-4">
+
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            <br>
+            &copy; Copyright <strong><span>Thiago Janaurio</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/resi-free-bootstrap-html-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">2023</a>
+          </div>
+        </div>
+        <br>
+        
+        
+      </div>      
+    </footer><!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        <!--Inicio Style CSS-->
+        <style>
+
+         
+        .outline-button {
+          margin-left: -2%;
+          display: inline-block;
+          padding: 10px 35px;
+          font-size: 16px;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          border: 2px solid #5a5af3; /* Cor do contorno */
+          color: #5a5af3; /* Cor do texto */
+          background-color: transparent; /* Fundo transparente */
+          border-radius: 15px; /* Borda arredondada, se desejar */
+          transition: background-color 0.6s, color 0.6s;
+        }
+
+        .outline-button:hover {
+          background-color: #5a5af3; /* Cor de fundo ao passar o mouse */
+          color: #fff; /* Cor do texto ao passar o mouse */
+        }
+
+        /*--------------------------------------------------------------
+          # Why Us
+          --------------------------------------------------------------*/
+          .why-us {
+            padding-top: 0;
+          }
+
+          .why-us .box {
+            padding: 50px 30px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            transition: all ease-in-out 0.3s;
+            margin-top: 25%;
+          }
+
+          .why-us .box span {
+            display: block;
+            font-size: 28px;
+            font-weight: 700;
+            color: #b9b9fa;
+          }
+
+          .why-us .box h4 {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 0;
+            margin: 20px 0;
+            color: #434175;
+          }
+
+          .why-us .box p {
+            color: #aaaaaa;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+          }
+
+          .why-us .box:hover {
+            background: #5a5af3;
+            padding: 30px 30px 70px 30px;
+            box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+          }
+
+          .why-us .box:hover span,
+          .why-us .box:hover h4,
+          .why-us .box:hover p {
+            color: #fff;
+          }
+
+          figure{
+            margin-left: 6%;
+          }
+
+          .direita{
+            float: right;
+            margin-left: 5%;
+            margin-top: 6%;
+            margin-bottom: 2%;
+            width: 52%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          }
+
+          #footer {
+            color: #444444;
+            font-size: 14px;
+            background: #eeeef5;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            bottom: 0;
+            padding: 10px 0;
+          }
+                  
+          #footer .credits {
+            padding-top: 5px;
+            font-size: 13px;
+            color: #444444;
+          }
+
+          #footer .credits a {
+            transition: 0.3s;
+          }
+
+          #footer .social-links a {
+            font-size: 18px;
+            display: inline-block;
+            background: #deddec;
+            color: #434175;
+            line-height: 1;
+            padding: 8px 0;
+            margin-right: 4px;
+            border-radius: 50%;
+            text-align: center;
+            width: 36px;
+            height: 36px;
+            transition: 0.3s;
+          }
+
+          #footer .social-links a:hover {
+            background: #5a5af3;
+            color: #fff;
+            text-decoration: none;
+          }
+
+          .bxl-twitter:before {
+              content: "\e982";
+          }
+
+          .bxl-facebook:before {
+              content: "\e92f";
+          }
+
+          .bxl-instagram:before {
+              content: "\e942";
+          }
+
+          .bxl-skype:before {
+              content: "\e96f";
+          }
+
+          .bxl-linkedin:before {
+              content: "\e94d";
+          }
+
+          .bx {
+              font-family: boxicons!important;
+              font-weight: 400;
+              font-style: normal;
+              font-variant: normal;
+              line-height: 1;
+              text-rendering: auto;
+              display: inline-block;
+              text-transform: none;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+          }
+
+          p{
+            padding: 0;
+            margin: 0 0 30px 0;
+            text-align: justify;
+            text-indent: 30px;
+            font-weight: bolder;
+            color: #333;
+            font-family: 'Comfortaa', sans-serif;
+            
+            margin-right: 2%;
+          }
+
+          h1{
+            font-family: 'Kanit', sans-serif;
+          }
+
+          .why-us .box1 {
+            margin-top: 8%;
+            padding: 50px 30px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            transition: all ease-in-out 0.3s;
+          }
+
+          .why-us .box1 span {
+            display: block;
+            font-size: 28px;
+            font-weight: 700;
+            color: #b9b9fa;
+          }
+
+          .why-us .box1 h4 {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 0;
+            margin: 20px 0;
+            color: #434175;
+          }
+
+          .why-us .box1 p {
+            color: #aaaaaa;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+          }
+
+          .why-us .box1:hover {
+            background: #5a5af3;
+            padding: 30px 30px 70px 30px;
+            box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+          }
+
+          .why-us .box1:hover span,
+          .why-us .box1:hover h4,
+          .why-us .box1:hover p {
+            color: #fff;
+          }
+
+         
+         
+
+         
+        </style>
+        <!--Fim Style CSS-->
+    </body>
+</html>
+
